@@ -1,0 +1,112 @@
+.app{
+	display: flex;
+	height: 100vh;
+	background-color: #020230;
+	color:white;
+}
+
+.main{
+	width: 75%;
+	background: url('./assets/bg.jpg') center;
+}
+.pyramid{
+	width: 25%;
+    display: flex;
+    align-items:center;
+	justify-content:center;
+	}
+
+.moneyList{
+	list-style: none;
+	width: 100%;
+	padding: 15px;
+}
+
+.moneyListItem{
+	display: flex;
+	align-items:center;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.moneyListItem.active{
+	background-color: green;
+}
+.moneyListItemnumber{
+	width:30%;
+}
+
+.top {
+  height: 50%;
+  position: relative;
+}
+
+.timer {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 80px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.bottom {
+  height: 50%;
+}
+
+.Trivia{
+	height:100%;
+	display:flex;
+	flex-direction:column; 
+	align-items:center;
+	justify-content:space-around;
+
+}
+
+.question{
+	width:80%;
+	background-color: black;
+	border: 2px solid white;
+	padding:15px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.answers{
+	width:100%;
+	display: flex;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+.answer{
+	width: 40%;
+	padding:10px;
+	text-align: center;
+	background-color: black;
+	border:1px solid white;
+	border-radius: 10px;
+	margin:0 10px 20px 10px;
+	cursor:pointer;
+}
+
+.answer:hover{
+	background: blue;
+}
+.answer.correct{
+	animation: correct 20s ease forwards;
+	}
+
+@keyframes correct {
+   0%,22%,42%{
+   	background: mediumblue;
+   }
+   20%,40%,60%{
+   	background: green;
+   }
+}
